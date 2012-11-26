@@ -28,7 +28,7 @@ environments {
         // by IMOS and is linked with the IMOS geonetwork instance. If you do not
         // want the fine grained spatial results that spatial search offers you 
         // can put a geonetwork URL in here and it should just work
-		spatialsearch.url = "http://imossearch.emii.org.au/search/search/index"
+        spatialsearch.url = "http://imossearch.emii.org.au/search/search/index"
 
         // WMS Scanner scans Geoserver and NcWMS servers defined in portal and
         // will add their layers to the available layers in your portal, the
@@ -41,19 +41,19 @@ environments {
         // you can go here https://svn.emii.org.au/public/wmsscanner-dist/tags
         // and grab a build (preferably the latest) and deploy it somewhere your
         // development environment will have access
-		wmsScanner.url = "http://wmsscannerpublic.aodn.org.au/wmsscanner/"
+        wmsScanner.url = "http://wmsscannerpublic.aodn.org.au/wmsscanner/"
 
         // URL for an OpenID authentication service for your portal to use.
         // Note we have a custom implementation and that is all that we have
         // tested portal with, in most cases all OpenID authentication services
         // should work but your mileage may vary. Contributions to improve
         // authentication services are willingly accepted
-		openIdProvider.url = "not disclosed"
+        openIdProvider.url = "not disclosed"
 
         // Configure your data source here
         dataSource {
-			jndiName = "java:comp/env/jdbc/imosportal"
-		}
+            jndiName = "java:comp/env/jdbc/imosportal"
+        }
 	}
 }
 
@@ -87,21 +87,21 @@ portal {
         }
     }
 
-	header {
+    header {
         // This is the logo that appears in the top left hand corner
-		logo = "IMOS-wide-logo-white.png"
+        logo = "IMOS-wide-logo-white.png"
         // Builds the link that appears in the top right hand corner next to 
         // Help link
-		organisationLink {
-			linkText = "IMOS"
-			tooltipText = "Integrated Marine Observing System"
-			url = "http://imos.org.au/"
-		}
-	}
+        organisationLink {
+            linkText = "IMOS"
+            tooltipText = "Integrated Marine Observing System"
+            url = "http://imos.org.au/"
+        }
+    }
 
-	systemEmail {
-		fromAddress = "not disclosed"
-	}
+    systemEmail {
+        fromAddress = "not disclosed"
+    }
 }
 
 // You can use the Grails logging DSL to configure your application's logging
