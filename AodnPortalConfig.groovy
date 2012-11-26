@@ -17,7 +17,7 @@
 
 environments {
 
-	production {
+    production {
         // URL of your application
         grails.serverURL = "http://imos.aodn.org.au/webportal"
 
@@ -54,7 +54,7 @@ environments {
         dataSource {
             jndiName = "java:comp/env/jdbc/imosportal"
         }
-	}
+    }
 }
 
 
