@@ -36,6 +36,11 @@ environments {
         // public. You can continue to use this URL or if you want to deploy
         // your own scanner instance we can help with that too, just get in
         // touch with us info at imos dot org dot au
+        // It's probable that you won't be able to use this scanner instance in
+        // your development environment. You can either add layers manually or
+        // you can go here https://svn.emii.org.au/public/wmsscanner-dist/tags
+        // and grab a build (preferably the latest) and deploy it somewhere your
+        // development environment will have access
 		wmsScanner.url = "http://wmsscannerpublic.aodn.org.au/wmsscanner/"
 
         // URL for an OpenID authentication service for your portal to use.
