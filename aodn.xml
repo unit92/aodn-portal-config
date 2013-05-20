@@ -42,7 +42,7 @@
             testOnBorrow="true" testWhileIdle="true" testOnReturn="true"
         />
     <!--
-    <Environment name="aodn.configuration" value="/var/lib/tomcat7/conf/aodn/Aodn.groovy" type="java.lang.String" override="true"/>
+    <Environment name="aodn.configuration" value="/var/lib/tomcat7/conf/aodn/AodnPortalConfig.groovy" type="java.lang.String" override="true"/>
     -->
 
 </Context>
