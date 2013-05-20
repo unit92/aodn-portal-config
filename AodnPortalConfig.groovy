@@ -41,7 +41,7 @@ environments {
         // you can go here https://svn.emii.org.au/public/wmsscanner-dist/tags
         // and grab a build (preferably the latest) and deploy it somewhere your
         // development environment will have access
-        wmsScanner.url = "http://wmsscannerpublic.aodn.org.au/wmsscanner/"
+        wmsScanner.url = "http://wmsscanner.aodn.org.au/wmsscanner/"
 
         // URL for an OpenID authentication service for your portal to use.
         // Note we have a custom implementation and that is all that we have
