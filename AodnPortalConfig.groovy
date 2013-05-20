@@ -52,7 +52,7 @@ environments {
 
         // Configure your data source here
         dataSource {
-            jndiName = "java:comp/env/jdbc/imosportal"
+            jndiName = "java:comp/env/jdbc/aodnportal"
         }
     }
 }
