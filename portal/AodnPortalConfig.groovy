@@ -48,7 +48,7 @@ environments {
         // tested portal with, in most cases all OpenID authentication services
         // should work but your mileage may vary. Contributions to improve
         // authentication services are willingly accepted
-        openIdProvider.url = "not disclosed"
+        openIdProvider.url = "https://www.google.com/accounts/o8/id"
 
         // Configure your data source here
         dataSource {
