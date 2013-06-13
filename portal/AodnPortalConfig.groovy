@@ -43,18 +43,30 @@ environments {
         // development environment will have access
         wmsScanner.url = "http://wmsscanner.aodn.org.au/wmsscanner/"
 
-        // URL for an OpenID authentication service for your portal to use.
-        // Note we have a custom implementation and that is all that we have
-        // tested portal with, in most cases all OpenID authentication services
-        // should work but your mileage may vary. Contributions to improve
-        // authentication services are willingly accepted
-        openIdProvider.url = "https://www.google.com/accounts/o8/id"
-
         // Configure your data source here
         dataSource {
             jndiName = "java:comp/env/jdbc/aodnportal"
         }
     }
+}
+
+// URLs and associated configuration for an OpenID authentication
+// service for your portal to use. We have tested the portal with
+// these configured providers. Contributions to improve authentication
+// services are willingly accepted
+openId {
+    // openID provider details to support login popup etc
+    providers = [
+            [ name: "Google", iconHref : "images/openid_icons/Google.png", supportsProviderLogout : false, providerHref : "https://www.google.com/accounts/o8/id"  ] ,
+            [ name: "Yahoo",  iconHref : "images/openid_icons/Yahoo.png", supportsProviderLogout : false, providerHref : "https://me.yahoo.com/"  ]
+            // Add your own providers here ...
+    ]
+
+    // Enable user to supply their their own OpenId url via textfield in popup list
+    enableUserSuppliedProvider = true
+
+    // Specify provider to work with register button/link (not an OpenId standard)
+    // registerProvider = providers.first();     // disabled by default
 }
 
 portal {
