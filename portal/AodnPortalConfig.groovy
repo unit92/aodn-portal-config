@@ -4,12 +4,12 @@
  * The AODN/IMOS Portal is distributed under the terms of the GNU General Public
  *  License
  *
- * An example production configuration file for the AODN portal, you could also 
- * configure test and development environments here and point portal to this 
+ * An example production configuration file for the AODN portal, you could also
+ * configure test and development environments here and point portal to this
  * config accordingly. Currently portal examines its context information for
  * an Environment setting named aodn.configuration that has the path to an
  * external configuration file such as this as its value.
- * 
+ *
  * AODN Portal Source: https://github.com/aodn/aodn-portal
  * AODN Portal: http://portal.aodn.org.au
  *              http://imos.aodn.org.au (An example of this config)
@@ -21,12 +21,12 @@ environments {
         // URL of your application
         grails.serverURL = "http://imos.aodn.org.au/webportal"
 
-        // The URL of a spatial search instance you want to use, note you may 
-        // need to deploy your own instance of spatial search if you want to use 
-        // it with your geonetwork data, see the portal wiki for more 
-        // information on collaborating applications. This value below is used 
+        // The URL of a spatial search instance you want to use, note you may
+        // need to deploy your own instance of spatial search if you want to use
+        // it with your geonetwork data, see the portal wiki for more
+        // information on collaborating applications. This value below is used
         // by IMOS and is linked with the IMOS geonetwork instance. If you do not
-        // want the fine grained spatial results that spatial search offers you 
+        // want the fine grained spatial results that spatial search offers you
         // can put a geonetwork URL in here and it should just work
         spatialsearch.url = "http://imossearch.emii.org.au/search/search/index"
 
@@ -57,10 +57,9 @@ environments {
     }
 }
 
-
 portal {
-    
-    instance { 
+
+    instance {
         // The name is used to load instance specific data migrations, in most
         // cases this should not be an issue for you so feel free to put any
         // suitable name for your instance here. The application will default
@@ -70,8 +69,8 @@ portal {
         // URL to serve your site CSS from, this does not have to be from within
         // portal's context e.g. http://me.example.com/static/css/portal.css
         css = "/webportal/css/IMOS.css"
-        splash { 
-            // A URL for the home page content, this is requested via an 
+        splash {
+            // A URL for the home page content, this is requested via an
             // internal proxy so can be served from anywhere, see the images
             // directory here for the splash.png image to see what part of
             // the screen this setting controls
@@ -90,7 +89,7 @@ portal {
     header {
         // This is the logo that appears in the top left hand corner
         logo = "IMOS-wide-logo-white.png"
-        // Builds the link that appears in the top right hand corner next to 
+        // Builds the link that appears in the top right hand corner next to
         // Help link
         organisationLink {
             linkText = "IMOS"
